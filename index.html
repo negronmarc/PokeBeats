@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Pokemon Index</title>
+</head>
+<body>
+    <nav class="level">
+        <p class="level-item has-text-centered">
+          <a class="link is-info">Home</a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link is-info">Pokemon</a>
+        </p>
+        <p class="level-item has-text-centered">
+          <img src="assets/images/pokemon_logo.png" alt="" style="height: 60px;">
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link is-info">Region</a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link is-info">Contact</a>
+        </p>
+    </nav>
+
+    <div class="container">
+        <label for="pickpokemon">Go!</label>
+        <select name="pick" id="dropdown">
+            <option value="">Choose a Pokemon</option>
+            <option value="Mewtwo">Mewtwo</option>
+            <option value="Articuno">Articuno</option>
+            <option value="Zapdos">Zapdos</option>
+            <option value="Moltres">Moltres</option>
+            <option value="Raikou">Raikou</option>
+            <option value="Entei">Entei</option>
+            <option value="Suicune">Suicune</option>
+        </select>
+        <button id="choose">I choose you</button>
+    </div>
+
+    <div id="searchbar">Search<input type="text" id="search"></div>
+
+    <footer>
+      <p>
+        Made with ❤️ by: 
+        <br>
+        Qunyh Dinh, Anthony Jimenez, Harrison Oliner, Marc Negron
+      </p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
