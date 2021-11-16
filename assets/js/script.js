@@ -9,18 +9,18 @@ chooseBtn.addEventListener ('click', function(event){
 
 // youtube api = 'https://www,googleapis.com/youtube/v3/playListItems';
 const api_key = '&key=AIzaSyCxiSCXwO-sJjxWJhf-__CeSTm5SIcjvDA';
-const playlistID = 'PL7B75E2DC0828B037'
+const playlistID = 'PLcEun0ol29M22lX34eOrRA4vMkxGZINAq'
   
 const youtubeUrl = 'https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId='
 
-let youtubeAPI = youtubeUrl +
-  playlistID +
-  api_key;
-
+let youtubeAPI = youtubeUrl + playlistID + api_key;
+console.log(youtubeAPI);
 fetch(youtubeAPI) 
     .then(function (response) {
         return response.json();
       })
       .then(function (data) {
         console.log(data)
-      })
+      });
+
+    
