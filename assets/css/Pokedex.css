@@ -1,0 +1,14 @@
+.border-top {
+    border-top: 3.5px solid var(--main-buttons-color);
+    position: absolute;
+    top: -3px;
+    left: 20px;
+    right: 19.5px;
+  }
+  .border-bottom {
+    border-top: 3.5px solid var(--main-buttons-color);
+    position: absolute;
+    top: 11px;
+    left: 20px;
+    right: 19.5px;
+  }
