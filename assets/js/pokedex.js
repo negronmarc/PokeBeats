@@ -1,7 +1,11 @@
-const searchBtn = document.getElementById('search-btn'); // search button
-const inputField = document.getElementById('name-input'); // search field input
+const submitBtn = document.getElementById('choose'); // search button
+const dropdownEl = document.getElementById('select'); // search field input
 const nameScreen = document.getElementById('name-screen'); //name-screen
+const cardName = document.getElementById('header-pokename'); //name-screen
+const cardImage = document.getElementById('pokemon-image'); // image screen
 const imageScreen = document.getElementById('main-screen'); // image screen
+const songTitle = document.getElementById('song-title'); // image screen
+const bottomHW = document.getElementById('height-weight'); // image screen
 const aboutScreen = document.getElementById('about-screen'); // about-text screen
 const typeScreen = document.getElementById('type-screen'); // type screen
 const idScreen = document.getElementById('id-screen'); // spices screen
@@ -9,21 +13,25 @@ const idScreen = document.getElementById('id-screen'); // spices screen
 const getPokemonData = (pokemon) => {
   fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
     .then((response) => response.json())
-    .then((data) => {
+    .then((data) => { 
       let id = ('00' + data.id).slice(-3);
       imageScreen.style.backgroundImage = `url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png')`;
       nameScreen.innerHTML = data.name;
       typeScreen.innerHTML = data.types[0].type.name;
-      idScreen.innerHTML = `#${data.id}`;
-      aboutScreen.innerHTML = `Height: ${data.height * 10}cm Weight: ${
-        data.weight / 10
-      }kg`;
-      inputField.value = '';
+      idScreen.innerHTML = `${data.id}`;
+      cardName.innerHTML = data.name;
+      cardImage.style.backgroundImage = `url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png')`;
+      bottomHW.innerHTML = `Height: ${data.height * 10}cm Weight: ${data.weight / 10}kg`;
+      fetch (`https://pokeapi.co/api/v2/pokemon-habitat/`)
+        .then((response) => response.json())
+        .then((data) => {
+          aboutScreen.innerHTML = `pokemon: ${data.names[0].name}`;
+      })
     });
 };
 
-inputField.addEventListener(
-  'keydown',
-  (event) => event.key === 'Enter' && searchBtn.click()
+dropdownEl.addEventListener('click', (event) => 
+  event.key === 'Enter' && submitBtn.click()
 );
-searchBtn.addEventListener('click', () => getPokemonData(inputField.value));
+
+submitBtn.addEventListener('click', () => getPokemonData(dropdownEl.value));
