@@ -5,6 +5,7 @@ const cardName = document.getElementById('header-pokename'); //name-screen
 const cardImage = document.getElementById('pokemon-image'); // image screen
 const imageScreen = document.getElementById('main-screen'); // image screen
 const songTitle = document.getElementById('song-title'); // image screen
+const bottomHW = document.getElementById('height-weight'); // image screen
 const aboutScreen = document.getElementById('about-screen'); // about-text screen
 const typeScreen = document.getElementById('type-screen'); // type screen
 const idScreen = document.getElementById('id-screen'); // spices screen
@@ -20,6 +21,7 @@ const getPokemonData = (pokemon) => {
       idScreen.innerHTML = `${data.id}`;
       cardName.innerHTML = data.name;
       cardImage.style.backgroundImage = `url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png')`;
+      bottomHW.innerHTML = `Height: ${data.height * 10}cm Weight: ${data.weight / 10}kg`;
       fetch (`https://pokeapi.co/api/v2/pokemon-habitat/`)
         .then((response) => response.json())
         .then((data) => {

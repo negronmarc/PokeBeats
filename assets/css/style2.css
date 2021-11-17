@@ -614,12 +614,24 @@ body {
   background-color: grey;
   width: 160px;
   height: 160px;
-  /* background-image: linear-gradient(to right, #86807c, #9fa3a1, #86807c); */
   border: 8px solid #e7e3e5;
   border-radius: 50%;
   position: absolute;
   top: 0;
   left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#id-circle {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 45px;
+  left: 710px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -633,6 +645,17 @@ body {
   left: 10%;
   width: 80%;
   text-align: center;
+  font-family: 'Pokemon Hollow', cursive, italic;
+}
+
+#height-weight {
+  padding: 15px 0px 15px 0px;
+  position: absolute;
+  top: 1100px;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  border: 2px solid #a97c2a;
   font-family: 'Pokemon Hollow', cursive, italic;
 }
 
