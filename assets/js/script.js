@@ -27,8 +27,7 @@ console.log(youtubeAPI);
 //       .then(function (data) {
 //         console.log(data)
 //       });
-      
-=======
+
   
 const youtubeUrl = 'https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId='
 

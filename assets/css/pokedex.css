@@ -1,3 +1,11 @@
+body {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../images/background.jpg");
+}
+
 :root {
     --main-bg-color: #fa0032;
     --secondary-bg-color: #f2f2f2;
