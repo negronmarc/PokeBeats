@@ -1,0 +1,47 @@
+body {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../images/background.jpg");
+}
+    
+.Column{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    padding: 2rem;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    background: white;
+    
+  }
+  .contact img, .name-text{
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact img{
+      height: 230px;
+  }
+  .name { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  };
+.contactlogo{
+    
+}
+
+  @media screen and (max-width: 750px){
+    .Column {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+      }
+      .Column{
+        display: flex;
+        margin: 3rem;
+        padding: 3rem;
+      }
+    }

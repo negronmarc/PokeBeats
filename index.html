@@ -9,22 +9,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <title>Pokemon Index</title>
 </head>
+
 <body>
     <nav class="level">
         <p class="level-item has-text-centered">
-          <a class="link is-info">Home</a>
+          <a class="link is-info" href="index.html" style="font-size:150%;">Home</a>
         </p>
         <p class="level-item has-text-centered">
-          <a class="link is-info">Pokemon</a>
+          <a class="link is-info" style="font-size:150%;">Pokemon</a>
         </p>
         <p class="level-item has-text-centered">
-          <img src="assets/images/pokemon_logo.png" alt="" style="height: 60px;">
+          <img src="assets/images/pokemon_logo.png" alt="" style="height: 80px;">
         </p>
         <p class="level-item has-text-centered">
-          <a class="link is-info">Region</a>
+          <a class="link is-info" style="font-size:150%;">Region</a>
         </p>
         <p class="level-item has-text-centered">
-          <a class="link is-info">Contact</a>
+          <a class="link is-info" href="contact.html" style="font-size:150%;">Contact</a>
         </p>
     </nav>
 
@@ -32,17 +33,26 @@
         <label for="pickpokemon">Go!</label>
         <select name="pick" id="dropdown">
             <option value="">Choose a Pokemon</option>
-            <option value="Mewtwo">Mewtwo</option>
-            <option value="Articuno">Articuno</option>
-            <option value="Zapdos">Zapdos</option>
-            <option value="Moltres">Moltres</option>
-            <option value="Raikou">Raikou</option>
-            <option value="Entei">Entei</option>
-            <option value="Suicune">Suicune</option>
+            <option value="mewtwo">Mewtwo</option>
+            <option value="articuno">Articuno</option>
+            <option value="zapdos">Zapdos</option>
+            <option value="moltres">Moltres</option>
+            <option value="raikou">Raikou</option>
+            <option value="entei">Entei</option>
+            <option value="suicune">Suicune</option>
         </select>
         <button id="choose">I choose you</button>
     </div>
 
+    <!-- pokedex -->
+    <div> 
+      <script src="jquery.js"></script> 
+      <script> 
+      $(function(){
+        $("#includedContent").load("Pokedex.html"); 
+      });
+      </script> 
+    </div> 
 
     <!-- <div id="searchbar">Search<input type="text" id="search"></div> -->
 
