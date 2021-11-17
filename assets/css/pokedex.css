@@ -608,3 +608,32 @@
   .linkedin {
     background-image: url(https://www.flaticon.com/svg/static/icons/svg/25/25320.svg);
   }
+
+  div.container {
+    text-align: left;
+    width: 710px;
+    margin: 0 auto;
+    border: 12px solid black;
+    border-radius: 10px;
+  }
+  div.content {
+    width: 700px;
+    min-height: 400px;
+    background-color: white;
+    padding: 5px;
+  }
+  @-webkit-keyframes mini {
+    from {
+      left: 410px;
+    }
+  }
+  .mini {
+    position: absolute;
+    top: 280px;
+    left: 950px;
+    width: 166px;
+    height: 70px;
+    z-index: 10000;
+    -webkit-animation: mini 3s;
+    animation: mini 8s;
+  }
