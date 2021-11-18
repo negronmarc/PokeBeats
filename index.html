@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/cardstyle.css" />
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <title>Poke-Beats</title>
 </head>
@@ -82,17 +82,33 @@
     </button>
   </div>
   
-  <section id="card" style="size: 50%;">
+  <section id="card">
     <box id="background-card">
       <box id="video-box"></box>
         <span id="header-pokename"></span>
-          <box id="pokemon-image"></box>
-            <box id="id-circle"></box>
-              <box id="playlist-title">Legendary Songs</box>
-                <box id="height-weight"></box>
+          <box id="firstbox"></box>
+            <box id="secondbox"></box>
+              <box id="thirdbox"></box>
+                <box id="pokemon-image"></box>
+                  <box id="id-box"></box>
+                    <box id="type"></box>
+                      <box id="playlist-title"><a href="https://www.fontspace.com/category/pokemon"><img src="https://see.fontimg.com/api/renderfont4/xyWR/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/UG9rZUJlYXRz/pokemon-solid-normal.png" alt="Pokémon fonts" id="title"></a></box>
+                        <box id="first-game"></box>
+                          <box id="second-game"></box>
+                            <image id="ball-bit"></image>
+                              <box id="versions"></box>
+                                <box id="move-box"></box>
+                                  <box id="move-1" class="moves"></box>
+                                    <box id="move-2" class="moves"></box>
+                                      <box id="move-3" class="moves"></box>
+                                        <box id="move-4" class="moves"></box>
+                                          <box id="bottom-box"></box>
     </box>
+
   </section>
 
-  <script src="./assets/js/pokecard.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./assets/js/card.js"></script>
+
 </body>
 </html>
