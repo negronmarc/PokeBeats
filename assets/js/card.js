@@ -1,3 +1,46 @@
+function getVideo(){
+  if(pokemonName == "darkrai"){
+    var iframe = document.getElementById("frame");
+    // manually created iframe
+        iframe.setAttribute("src", "https://www.youtube.com/embed/JxsmsoauN70");
+        iframe.setAttribute("width","660");
+        iframe.setAttribute("height","380");
+        iframe.setAttribute("title","Pokemon Video");
+        iframe.setAttribute("frameborder","0");
+        iframe.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+        iframe.setAttribute("allowfullscreen", true);
+  } else if(pokemonName == "regigigas"){
+    var iframe = document.getElementById("frame");
+    // manually created iframe
+        iframe.setAttribute("src", "https://www.youtube.com/embed/0-X1yJL-cO4"); 
+        iframe.setAttribute("width","660");
+        iframe.setAttribute("height","380");
+        iframe.setAttribute("title","Pokemon Video");
+        iframe.setAttribute("frameborder","0");
+        iframe.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+        iframe.setAttribute("allowfullscreen", true);
+  }
+  else{
+    //Fetch the youtube API
+    fetch(youtubeAPI)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) { //creating youtube video
+      var videoId = data.items[videoArrIndex].snippet.resourceId.videoId;
+      console.log(videoId);
+      var iframe = document.getElementById("frame");
+      // manually created iframe
+          iframe.setAttribute("src", "https://www.youtube.com/embed/" + videoId);
+          iframe.setAttribute("width","660");
+          iframe.setAttribute("height","380");
+          iframe.setAttribute("title","Pokemon Video");
+          iframe.setAttribute("frameborder","0");
+          iframe.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+          iframe.setAttribute("allowfullscreen", true);          
+    })}
+}
+
 const submitBtn = document.getElementById('choose');
 const dropdownEl = document.getElementById('select');
 const nameScreen = document.getElementById('name-screen');
@@ -18,6 +61,9 @@ const move2 = document.getElementById('move-2');
 const move3 = document.getElementById('move-3');
 const move4 = document.getElementById('move-4');
 
+var pokemonName = '';
+var videoArrIndex = 0;
+
 const getPokemonData = (pokemon) => {
   fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
     .then((response) => response.json())
@@ -30,6 +76,7 @@ const getPokemonData = (pokemon) => {
       cardName.innerHTML = data.name;
       moveTitle.innerHTML = `What will ${data.name} do?`;
       circleId.innerHTML = `ID# ${data.id}`;
+      pokemonName = data.name;     
       abilityBox.innerHTML = `Ability: ${data.abilities[0].ability.name}`;
       move1.innerHTML = data.moves[0].move.name;
       move2.innerHTML = data.moves[1].move.name;
@@ -111,8 +158,7 @@ const getPokemonData = (pokemon) => {
           move1.style.backgroundColor = "#114167"; 
           move2.style.backgroundColor = "#114167"; 
           move3.style.backgroundColor = "#114167"; 
-          move4.style.backgroundColor = "#114167";
-           
+          move4.style.backgroundColor = "#114167";  
           cardBackground.style.backgroundImage = "linear-gradient(#051a49, #124e73, #051a49, #124e73, #051a49)";
         } else {
           typeBox.style.backgroundColor = "black";
@@ -133,7 +179,144 @@ const getPokemonData = (pokemon) => {
           } else if (data.game_indices[0].version.name === "black", data.game_indices[1].version.name === "white") {
             firstGame.style.backgroundImage = `url('https://upload.wikimedia.org/wikipedia/en/e/e1/Pokemon_Black_Box_Artwork.jpg')`
             secondGame.style.backgroundImage = `url('https://cdn2.bulbagarden.net/upload/thumb/0/08/White_EN_boxart.png/250px-White_EN_boxart.png')`
-          }
+          } 
+          //switch statement to catch pokemon name.
+          switch (pokemonName){
+            case 'mew':
+              videoArrIndex = 7;
+              getVideo();
+              break;
+            case 'mewtwo':
+              videoArrIndex = 30;
+              getVideo();
+              break;
+            case 'articuno':
+              videoArrIndex = 0;
+              getVideo();
+              break;
+            case 'zapdos':
+              videoArrIndex = 0;
+              getVideo();
+              break;
+            case 'moltres':
+              videoArrIndex = 0;
+              getVideo();
+              break;
+            case 'raikou':
+              videoArrIndex = 1;
+              getVideo();
+              break;
+            case 'entei':
+              videoArrIndex = 1;
+              getVideo();
+              break;
+            case 'suicune':
+              videoArrIndex = 1;
+              getVideo();
+              break;
+            case 'lugia':
+              videoArrIndex = 19;
+              getVideo();
+              break;
+            case 'ho-oh':
+              videoArrIndex = 18;
+              getVideo();
+              break;
+            case 'regirock':
+              videoArrIndex = 4;
+              getVideo();
+              break;
+            case 'regice':
+              videoArrIndex = 4;
+              getVideo();
+              break;
+            case 'registeel':
+              videoArrIndex = 4;
+              getVideo();
+              break;
+            case 'regigigas':
+              videoArrIndex = 4;
+              getVideo();
+              break;
+            case 'latios':
+              videoArrIndex = 2;
+              getVideo();
+              break;
+            case 'latias':
+              videoArrIndex = 2;
+              getVideo();
+              break;
+            case 'kyogre':
+              videoArrIndex = 3;
+              getVideo();
+              break;
+            case 'groudon':
+              videoArrIndex = 3;
+              getVideo();
+              break;
+            case 'rayquaza':
+              videoArrIndex = 28;
+              getVideo();
+              break;
+            case 'uxie':
+              videoArrIndex = 11;
+              getVideo();
+              break;
+            case 'mesprit':
+              videoArrIndex = 11;
+              getVideo();
+              break;
+            case 'azelf':
+              videoArrIndex = 11;
+              getVideo();
+              break;
+            case 'dialga':
+              videoArrIndex = 10;
+              getVideo();
+              break;
+            case 'palkia':
+              videoArrIndex = 10;
+              getVideo();
+              break;
+            case 'cresselia':
+              videoArrIndex = 37;
+              getVideo();
+              break;
+            case 'heatran':
+              videoArrIndex = 9;
+              getVideo();
+              break;
+            case 'cobalion':
+              videoArrIndex = 20;
+              getVideo();
+              break;
+            case 'terrakion':
+              videoArrIndex = 20;
+              getVideo();
+              break;
+            case 'virizion':
+              videoArrIndex = 20;
+              getVideo();
+              break;
+            case 'reshiram':
+              videoArrIndex = 21;
+              getVideo();
+              break;
+            case 'zekrom':
+              videoArrIndex = 21;
+              getVideo();
+              break;
+            case 'kyurem':
+              videoArrIndex = 22;
+              getVideo();
+              break;
+            case 'darkrai':
+    
+              getVideo();
+              break;
+            default:
+              console.log("The bad");
+      }
     });
 };
 
@@ -142,6 +325,12 @@ dropdownEl.addEventListener('click', (event) =>
 );
 
 submitBtn.addEventListener('click', () => getPokemonData(dropdownEl.value));
+  // youtube api = 'https://www,googleapis.com/youtube/v3/playListItems';
+  const api_key = '&key=AIzaSyCxiSCXwO-sJjxWJhf-__CeSTm5SIcjvDA';
+  const playlistID = 'PLcEun0ol29M22lX34eOrRA4vMkxGZINAq'
+  const youtubeUrl = 'https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId='
+  let youtubeAPI = youtubeUrl + playlistID + api_key;
+  console.log(youtubeAPI);
 
 // Local Storage
 
