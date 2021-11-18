@@ -192,7 +192,7 @@ body {
 }
 
 #type {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   padding: 5px 0px 5px 0px;
   width: 80px;
   height: 25px;
