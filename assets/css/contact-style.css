@@ -4,8 +4,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url("../images/background.jpg");
+}    
+
+.nav{
+  position: fixed;
 }
-    
+
 .Column{
     display: flex;
     flex-direction: row;
@@ -29,9 +33,7 @@ body {
     align-items: center;
     flex-direction: column;
   };
-.contactlogo{
     
-}
 
   @media screen and (max-width: 750px){
     .Column {
