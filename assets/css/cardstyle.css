@@ -1,0 +1,320 @@
+body {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../images/background.jpg");
+}
+
+#select-bar {
+  text-align: center;
+  font-size: 25px;
+}
+
+#choose {
+  margin-top: 20px;
+  background-color: blue;
+  color: white;
+  padding: 0px 15px;
+  transition-duration: 0.8s;
+}
+
+#choose:hover {
+  background-color: red;
+  color: black;
+}
+
+#save-button {
+  text-align: center;
+}
+
+#save {
+  display: inline-flex;
+  text-align: center;
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  padding: 0px 15px;
+  font-size: 20px;
+  border: 2px solid black;
+  outline-offset: -101px;
+}
+
+#save:hover {
+  background-color: black;
+  color:white
+}
+
+.p {
+  margin-left: 8px;
+}
+
+.high {
+  font-size: 12px;
+}
+
+.low {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+#card {
+  text-align: center;
+}
+
+#video-box {
+  position: absolute;
+  top: 110px;
+  left: 10%;
+  text-align: center;
+  border: 10px solid #a97c2a;
+  padding-right: 50%;
+  width: 80%;
+  height: 400px;
+  text-transform: capitalize;
+}
+
+#background-card {
+  text-align: center;
+  display: inline-flex;
+  background-color: white;
+  width: 900px;
+  height: 1050px;
+  border: 25px solid #f2c75b;
+  border-radius: 20px;
+  padding: 60px;
+  margin: 20px;
+  position: relative;
+}
+
+#header-pokename {
+  position: absolute;
+  top: 36px;
+  left: 205px;
+  width: 72%;
+  border-top: 1px solid #f2c75b;
+  padding-right: 50%;
+  color: black;
+  font-size: 60px;
+  font-family: 'Pokemon Hollow', cursive;
+  text-transform: capitalize;
+}
+
+#first-game {  
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 560px;
+  left: 85px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#second-game {  
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 560px;
+  right: 85px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#firstbox {
+  background-image: linear-gradient(to right, #826824, #f5dc91, #826824);
+  transform: rotate(35deg);
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+#secondbox {
+  background-image: linear-gradient(to right, #826824, #f5dc91, #826824);
+  transform: rotate(55deg);
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+#thirdbox {
+  background-image: linear-gradient(to right, #826824, #f5dc91, #826824);
+  transform: rotate(45deg);
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+#pokemon-image {
+  background-color: grey;  
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#ball-bit {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+  left: 720px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/pokeball-bit.png");
+}
+
+#id-box {
+  background-color: black;
+  padding: 5px 0px 5px 0px;
+  width: 80px;
+  height: 25px;
+  position: absolute;
+  top: 520px;
+  left: 85px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  font-family: 'Pokemon Hollow', cursive;
+}
+
+#type {
+  background-color: white;
+  padding: 5px 0px 5px 0px;
+  width: 80px;
+  height: 25px;
+  position: absolute;
+  top: 520px;
+  right: 85px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Pokemon Hollow', cursive;
+}
+
+#playlist-title {
+  background-image: linear-gradient(to right, #826824, #f5dc91, #826824);
+  position: absolute;
+  top: 520px;
+  left: 20%;
+  width: 60%;
+  height: 25px;
+  text-align: center;
+  color: black;
+  font-family: 'Pokemon Hollow', cursive;
+}
+
+#title {
+  height: 25px;
+}
+
+#versions {
+    padding: 5px 0px 5px 0px;
+    position: absolute;
+    top: 610px;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Pokemon Hollow', cursive;
+    text-transform: capitalize;
+}
+
+#move-box {
+  padding: 10px;
+  position: absolute;
+  top: 710px;
+  left: 5%;
+  width: 90%;
+  height: 220px;
+  color: black;
+  background-color: white;
+  border: 2px solid #a97c2a;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: 'Pokemon Hollow', cursive;
+  text-transform: uppercase;
+}
+
+#move-1 {
+  position: absolute;
+  padding: 20px;
+  top: 772px;
+  left: 80px;
+  width: 330px;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Pokemon Hollow', cursive;
+  text-transform: uppercase;
+}
+
+#move-2 {
+  position: absolute;
+  padding: 20px;
+  top: 772px;
+  right: 80px;
+  width: 330px;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Pokemon Hollow', cursive;
+  text-transform: uppercase;
+}
+
+#move-3 {
+  position: absolute;
+  padding: 20px;
+  top: 850px;
+  left: 80px;
+  width: 330px;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Pokemon Hollow', cursive;
+  text-transform: uppercase;
+}
+
+#move-4 {
+  position: absolute;
+  padding: 20px;
+  top: 850px;
+  right: 80px;
+  width: 330px;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Pokemon Hollow', cursive;
+  text-transform: uppercase;
+}
+
+#bottom-box {
+  padding: 15px 0px 15px 0px;
+  position: absolute;
+  top: 940px;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  color: black;
+  border: 2px solid #a97c2a;
+  font-family: 'Pokemon Hollow', cursive;
+  text-transform: capitalize;
+}
+
