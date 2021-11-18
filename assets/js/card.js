@@ -347,5 +347,3 @@ inputEl[0].value = localStorage.getItem("pokemon");
 if(inputEl[0].value !== "") {
   getPokemonData(inputEl[0].value);
 }
-
-

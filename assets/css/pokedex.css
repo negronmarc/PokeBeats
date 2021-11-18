@@ -529,7 +529,7 @@ input {
   align-items: center;
 }
 .right-panel-screen {
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Press Start 2P', cursive;
   width: 175px;
   height: 220px;
   background-color: var(--secondary-screen-bg-color);
@@ -542,6 +542,8 @@ input {
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: rgb(255, 255, 255);
+  position: relative; 
 }
 
 /* red lights */
