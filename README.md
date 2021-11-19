@@ -6,7 +6,7 @@ The webpage will let the user choose a pokemon and display there music alongside
 
 * [General-info](General-info)
 * [Technologies](#Technologies)
-* [ilustration](#Illustration)
+* [Illustration](#Illustration)
 * [Launch](#Launch)
 
 ## General-info
@@ -18,15 +18,15 @@ The goal of this project is to use the pokeAPI so we can access information abou
 - HTML5
 - CSS
 - Javascript
-- Bulma
-- Youtube API (https://developers.google.com/youtube/v3)
-- Pokemon API (https://pokeapi.co/)
+- [Bulma](https://bulma.io/)
+- [Youtube API](https://developers.google.com/youtube/v3)
+- [Pokemon API](https://pokeapi.co/)
 - Git/Github
 
 ## Illustration
 
 ![Alt text](./assets/images/preview.png "Webpage Preview")
 
-## launch
+## Deployment
 
-https://github.com/negronmarc/Poke-Beats/settings/pages
+[Poke-Beats website](https://github.com/negronmarc/Poke-Beats/settings/pages)
