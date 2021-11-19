@@ -302,7 +302,7 @@ input {
   background-color: var(--main-screen-bg-color);
   border: solid black 2px;
   border-radius: 5%;
-  background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png);
+  background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/258.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -377,6 +377,7 @@ input {
   text-align: center;
   font-size: 14px;
   overflow-wrap: break-word;
+  text-transform: capitalize;
 }
 
 .circle {
@@ -542,6 +543,9 @@ input {
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: rgb(255, 255, 255);
+  position: relative;
+  text-transform: capitalize;
 }
 
 /* red lights */
@@ -579,6 +583,7 @@ input {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-transform: capitalize;
 }
 
 .bottom-screens-container .right-panel-screen {

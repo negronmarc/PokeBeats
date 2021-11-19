@@ -1,12 +1,10 @@
-<!-- <link
-rel="icon"
-type="image/gif/jpg"
-href="https://image.winudf.com/v2/image/bmV0LmFudGFmdW5ueS5wb2tlbW9uZ28uZ3VpZGUuZXhwZXJ0X2ljb25fMTUwNjAyMjk4NF8wOTc/icon.png?w=170&fakeurl=1"
-/>
-<link
-href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-rel="stylesheet"
-/> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
 <link rel="stylesheet" href="assets/css/pokedex.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -14,174 +12,186 @@ rel="stylesheet"
 
 <body>
 
-    <nav class="level">
-        <p class="level-item has-text-centered">
-          <a class="link is-info" href="index.html" style="font-size:150%;">Home</a>
-        </p>
-        <p class="level-item has-text-centered">
-          <a class="link is-info" href="Pokedex.html" style="font-size:150%;">Pokedex</a>
-        </p>
-        <p class="level-item has-text-centered">
-          <img src="assets/images/pokemon_logo.png" alt="" style="height: 60px;">
-        </p>
-        <p class="level-item has-text-centered">
-          <a class="link is-info" href= "region.html" style="font-size:150%;">Region</a>
-        </p>
-        <p class="level-item has-text-centered">
-          <a class="link is-info" href="contact.html" style="font-size:150%;">Contact</a>
-        </p>
-    </nav>
-
+  <nav class="level">
+    <p class="level-item has-text-centered">
+      <a class="link is-info" href="index.html" style="font-size: 150%"
+        >Home</a
+      >
+    </p>
+    <p class="level-item has-text-centered">
+      <a class="link is-info" href="pokedex.html" style="font-size: 150%"
+        >Pokedex</a
+      >
+    </p>
+    <p class="level-item has-text-centered">
+      <a href="https://www.pokemon.com/us/" target="_blank"
+        ><img
+          src="assets/images/pokemon_logo.png"
+          style="height: 60px"
+          alt=""
+      /></a>
+    </p>
+    <p class="level-item has-text-centered">
+      <a
+        class="link is-info"
+        href="region.html"
+        target="_blank"
+        style="font-size: 150%"
+        >Region</a
+      >
+    </p>
+    <p class="level-item has-text-centered">
+      <a class="link is-info" href="contact.html" style="font-size: 150%"
+        >Contact</a
+      >
+    </p>
+  </nav>
     <div class="search-container">
         <input id="name-input" type="text" placeholder="Name / id" />
-
+  
         <div id="search-btn" class="ball-container">
-            <div class="upper-half-ball"></div>
-            <div class="bottom-half-ball"></div>
-            <div class="center-ball"></div>
-            <div class="center-line"></div>
+          <div class="upper-half-ball"></div>
+          <div class="bottom-half-ball"></div>
+          <div class="center-ball"></div>
+          <div class="center-line"></div>
         </div>
-    </div>
-    <section class='dex'>
-        <div id="pokedex">
+      </div>
+  
+      <div id="pokedex" style="margin-inline: auto;">
         <!-- Left Panel -->
         <div id="left-panel">
-            <!-- Top lights -->
-            <div class="left-top-container">
+          <!-- Top lights -->
+          <div class="left-top-container">
             <svg height="100" width="225" class="left-svg">
-                <polyline points="0,75 70,75 90,38 224,38"
-                style="fill: none; stroke: black; stroke-width: 3"/>
+              <polyline
+                points="0,75 70,75 90,38 224,38"
+                style="fill: none; stroke: black; stroke-width: 3"
+              />
             </svg>
             <div class="lights-container">
-                <div class="big-light-boarder">
+              <div class="big-light-boarder">
                 <div class="big-light blue">
-                    <div class="big-dot light-blue"></div>
+                  <div class="big-dot light-blue"></div>
                 </div>
-                </div>
-                <div class="small-lights-container">
+              </div>
+              <div class="small-lights-container">
                 <div class="small-light red">
-                    <div class="dot light-red"></div>
+                  <div class="dot light-red"></div>
                 </div>
                 <div class="small-light yellow">
-                    <div class="dot light-yellow"></div>
+                  <div class="dot light-yellow"></div>
                 </div>
                 <div class="small-light green">
-                    <div class="dot light-green"></div>
+                  <div class="dot light-green"></div>
                 </div>
-                </div>
+              </div>
             </div>
-            </div>
-            <!-- Center Screen -->
-        <div class="screen-container">
+          </div>
+          <!-- Center Screen -->
+          <div class="screen-container">
             <div class="screen">
-            <div class="top-screen-lights">
+              <div class="top-screen-lights">
                 <div class="mini-light red"></div>
                 <div class="mini-light red"></div>
-            </div>
-            <div id="main-screen"></div>
-            <div class="bottom-screen-lights">
+              </div>
+              <div id="main-screen"></div>
+              <div class="bottom-screen-lights">
                 <div class="small-light red">
-                <div class="dot light-red"></div>
+                  <div class="dot light-red"></div>
                 </div>
                 <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
                 </div>
+              </div>
             </div>
-            </div>
-        </div>
-        <!-- Bottom Buttons -->
-        <div class="buttons-container">
+          </div>
+          <!-- Bottom Buttons -->
+          <div class="buttons-container">
             <div class="upper-buttons-container">
-            <div class="big-button"></div>
-            <div class="long-buttons-container">
+              <div class="big-button"></div>
+              <div class="long-buttons-container">
                 <div class="long-button red"></div>
                 <div class="long-button light-blue"></div>
-            </div>
+              </div>
             </div>
             <div class="nav-buttons-container">
-            <div class="dots-container">
+              <div class="dots-container">
                 <div>.</div>
                 <div>.</div>
-            </div>
-            <div class="green-screen" style="color: white;">
-                <span id="name-screen">bulbasaur</span>
-            </div>
-            <div class="right-nav-container">
+              </div>
+              <div class="green-screen" style = 'color: white;'>
+                <span id="name-screen">Mudkip</span>
+              </div>
+              <div class="right-nav-container">
                 <div class="nav-button">
-                <div class="nav-center-circle"></div>
-                <div class="nav-button-vertical"></div>
-                <div class="nav-button-horizontal">
+                  <div class="nav-center-circle"></div>
+                  <div class="nav-button-vertical"></div>
+                  <div class="nav-button-horizontal">
                     <div class="border-top"></div>
                     <div class="border-bottom"></div>
-                </div>
+                  </div>
                 </div>
                 <div class="bottom-right-nav-container">
-                <div class="small-light red">
+                  <div class="small-light red">
                     <div class="dot light-red"></div>
-                </div>
-                <div class="dots-container">
+                  </div>
+                  <div class="dots-container">
                     <div class="black-dot">.</div>
                     <div class="black-dot">.</div>
                     <div class="black-dot">.</div>
+                  </div>
                 </div>
-                </div>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </div>
         <!-- End of Left panel -->
+  
+        <div id="right-panel">
+            <!-- Blank container -->
+            <div class="empty-container">
+              <svg height="100%" width="100%">
+                <polyline
+                  points="0,0 0,40 138,40 158,75 250,75 250,0 0,0"
+                  style="fill: #79caf9"; stroke: none; stroke-width: 3"
+                />
+                <polyline
+                  points="0,40 138,40 158,75 250,75"
+                  style="fill: none; stroke: black; stroke-width: 3"
+                />
+              </svg>
+            </div>
+            <!-- Top screen -->
+            <div class="top-screen-container" style = "position:relative; top: 80px;">
+              <div id="about-screen" class="right-panel-screen" style="font-size: 20px;">
+                Height: 40cm Weight: 7.6kg Hidden Ability: Damp 
+              </div>
+            </div>
 
-                <!-- Right-panel -->
-                <div id="right-panel">
-                    <!-- Blank container -->
-                    <div class="empty-container">
-                    <svg height="100%" width="100%">
-                        <polyline
-                        points="0,0 0,40 138,40 158,75 250,75 250,0 0,0"
-                        style="fill: #79c9f9; stroke: none; stroke-width: 3"
-                        />
-                        <polyline
-                        points="0,40 138,40 158,75 250,75"
-                        style="fill: none; stroke: black; stroke-width: 3"
-                        />
-                    </svg>
-                    </div>
-                    <!-- Top screen -->
-                    <div class="top-screen-container" style = "position:relative; top: 80px;">
-                    <div id="about-screen" class="right-panel-screen" style="color: white; font-size: 15;">
-                        Height: 70cm Weight: 6.9kg
-                    </div>
-                    </div>
-    
-                <!-- Center Buttons -->
-                <div class="center-buttons-container">
-                <div class="center-left-container">
-                    <div class="small-reds-container">
-                    <div class="small-light red" style = "position:relative; bottom: 125px;">
-                        <div class="dot light-red"></div>
-                    </div>
-                    <div class="small-light red" style = "position:relative; bottom: 125px;">
-                        <div class="dot light-red"></div>
-                    </div>
-                    </div>
+            <!-- Center Buttons -->
+            <div class="center-buttons-container">
+              <div class="center-left-container">
+                <div class="small-reds-container">
+                  <div class="small-light red" style = "position:relative; bottom: 125px;">
+                    <div class="dot light-red"></div>
+                  </div>
+                  <div class="small-light red" style = "position:relative; bottom: 125px;">
+                    <div class="dot light-red"></div>
+                  </div>
                 </div>
-                </div>
-                <!-- Bottom screens -->
-                <div class="bottom-screens-container" style = "position:relative; top: 80px; color: white;">
-                <div id="type-screen" class="right-panel-screen" style="font-size: 14;">grass</div>
-                <div id="id-screen" class="right-panel-screen" style="font-size: 14;">#1</div>
-                </div>
+              </div>
             </div>
+            <!-- Bottom screens -->
+            <div class="bottom-screens-container" style = "position:relative; top: 80px;">
+              <div id="type-screen" class="right-panel-screen" style="font-size: 14px;">Water</div>
+              <div id="id-screen" class="right-panel-screen" style="font-size: 14px;">#258</div>
             </div>
-    </section>
-    <footer> 
-        <p> Made with ❤️ by: 
-            <br>
-            Quynh Dinh, Anthony Jimenez, Harrison Oliner, Marc Negron </p>
-        </footer>
+          </div>
+              </div>
+          </section>
   
     <script src="./assets/js/pokedex.js"></script>
 </body>
