@@ -72,7 +72,7 @@ const getPokemonData = (pokemon) => {
       var timer = setInterval(() => {
         cardImage.style.backgroundImage = `url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png')`;
         clearInterval(timer);
-      }, 2000);
+      }, 200);
       cardName.innerHTML = data.name;
       moveTitle.innerHTML = `What will ${data.name} do?`;
       circleId.innerHTML = `ID# ${data.id}`;
