@@ -29,8 +29,12 @@ The goal of this project is to use the pokeAPI so we can access information abou
 
 ## Deployment
 
+
 [Poke-Beats website](https://github.com/negronmarc/Poke-Beats/settings/pages)
 
 ## Credit
 
 Marc Negron, Anthony Jimenez, Harrison Oliner, Quynh Dinh
+=======
+[Poke-Beats website](https://negronmarc.github.io/Poke-Beats/index.html)
+
