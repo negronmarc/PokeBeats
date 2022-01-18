@@ -194,6 +194,14 @@ const getPokemonData = (pokemon) => {
         move4.style.backgroundColor = "#114167";
         cardBackground.style.backgroundImage =
           "linear-gradient(#051a49, #124e73, #051a49, #124e73, #051a49)";
+      } else if (data.types[0].type.name === "ground") {
+        typeBox.style.backgroundColor = "#d95228";
+        move1.style.backgroundColor = "#d95228";
+        move2.style.backgroundColor = "#d95228";
+        move3.style.backgroundColor = "#d95228";
+        move4.style.backgroundColor = "#d95228";
+        cardBackground.style.backgroundImage =
+          "linear-gradient(#d66f38, #f8c238, #d66f38, #f8c238, #d66f38)";
       } else {
         typeBox.style.backgroundColor = "black";
       }
@@ -202,32 +210,32 @@ const getPokemonData = (pokemon) => {
         (data.game_indices[0].version.name === "red",
         data.game_indices[1].version.name === "blue")
       ) {
-        firstGame.style.backgroundImage = `url('https://m.media-amazon.com/images/I/71ZlDsoz7BL._SL1064_.jpg')`;
-        secondGame.style.backgroundImage = `url('https://m.media-amazon.com/images/I/81rcAdryhEL._SL1061_.jpg')`;
+        firstGame.style.backgroundImage = `url('./assets/images/pokemon-red.png')`;
+        secondGame.style.backgroundImage = `url('./assets/images/pokemon-blue.png')`;
       } else if (
         (data.game_indices[0].version.name === "gold",
         data.game_indices[1].version.name === "silver")
       ) {
-        firstGame.style.backgroundImage = `url('https://m.media-amazon.com/images/I/61VMTJF0EDL._SX342_.jpg')`;
-        secondGame.style.backgroundImage = `url('https://m.media-amazon.com/images/I/81UQlso+frL._SL1500_.jpg')`;
+        firstGame.style.backgroundImage = `url('./assets/images/pokemon-gold.png')`;
+        secondGame.style.backgroundImage = `url('./assets/images/pokemon-silver.png')`;
       } else if (
         (data.game_indices[0].version.name === "ruby",
         data.game_indices[1].version.name === "sapphire")
       ) {
-        firstGame.style.backgroundImage = `url('https://now.estarland.com/images/products/hr/10810/045496732530.jpg')`;
-        secondGame.style.backgroundImage = `url('https://m.media-amazon.com/images/I/61RDD36KWPL.jpg')`;
+        firstGame.style.backgroundImage = `url('./assets/images/pokemon-ruby.jpg')`;
+        secondGame.style.backgroundImage = `url('./assets/images/pokemon-sapphire.png')`;
       } else if (
         (data.game_indices[0].version.name === "diamond",
         data.game_indices[1].version.name === "pearl")
       ) {
-        firstGame.style.backgroundImage = `url('https://m.media-amazon.com/images/I/51oEpmg-6ZL.jpg')`;
-        secondGame.style.backgroundImage = `url('https://m.media-amazon.com/images/I/51dGqCLLP-L.jpg')`;
+        firstGame.style.backgroundImage = `url('./assets/images/pokemon-diamond.jpg')`;
+        secondGame.style.backgroundImage = `url('./assets/images/pokemon-pearl.jpg')`;
       } else if (
         (data.game_indices[0].version.name === "black",
         data.game_indices[1].version.name === "white")
       ) {
-        firstGame.style.backgroundImage = `url('https://upload.wikimedia.org/wikipedia/en/e/e1/Pokemon_Black_Box_Artwork.jpg')`;
-        secondGame.style.backgroundImage = `url('https://cdn2.bulbagarden.net/upload/thumb/0/08/White_EN_boxart.png/250px-White_EN_boxart.png')`;
+        firstGame.style.backgroundImage = `url('./assets/images/pokemon-black.png')`;
+        secondGame.style.backgroundImage = `url('./assets/images/pokemon-white.png')`;
       }
       //switch statement to catch pokemon name.
       switch (pokemonName) {
