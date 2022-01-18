@@ -178,6 +178,14 @@ const getPokemonData = (pokemon) => {
         move4.style.backgroundColor = "#a2c256";
         cardBackground.style.backgroundImage =
           "linear-gradient(#93c85e, #bcd27d, #93c85e, #bcd27d, #93c85e)";
+      } else if (data.types[0].type.name === "ground") {
+        typeBox.style.backgroundColor = "#d95228";
+        move1.style.backgroundColor = "#d95228";
+        move2.style.backgroundColor = "#d95228";
+        move3.style.backgroundColor = "#d95228";
+        move4.style.backgroundColor = "#d95228";
+        cardBackground.style.backgroundImage =
+          "linear-gradient(#d66f38, #f8c238, #d66f38, #f8c238, #d66f38)";
       } else if (data.types[0].type.name === "normal") {
         typeBox.style.backgroundColor = "#a99664";
         move1.style.backgroundColor = "#a99664";
