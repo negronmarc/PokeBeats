@@ -31,7 +31,7 @@ This webpage will let users choose a pokemon and display there music alongside t
 
 ## Contributors
 
-Quynh Dinh, Anthony Jimenez, Marc Negron, Harrison Oliner
+[Quynh Dinh](https://github.com/quynhndinh), [Anthony Jimenez](https://github.com/Dominiscus1), [Marc Negron](https://github.com/negronmarc), [Harrison Oliner](https://github.com/Harrison-Oliner)
 
 ## Launch
 
