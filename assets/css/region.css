@@ -73,38 +73,276 @@ body {
   font-family: "Pokemon Hollow", cursive;
 }
 
-@media screen and (max-width: 992px) {
-  body {
-    width: 50%;
-  }
-  #region {
-    width: 50%;
-  }
+@media screen and (min-width: 2560px) {
   #region-text {
-    width: 50%;
+    top: 8%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+    font-size: 45px;
+    padding: 50px;
   }
   #region-map {
-    width: 50%;
+    top: 18%;
+    left: 5%;
+    width: 90%;
+    height: 55%;
   }
   #bottom-text {
+    top: 73%;
+    left: 15%;
+    width: 70%;
+    height: 20%;
+    font-size: 45px;
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #region-text {
+    top: 12%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+    font-size: 25px;
+    padding: 40px;
+  }
+  #region-map {
+    top: 22%;
+    left: 5%;
+    width: 90%;
+    height: 55%;
+  }
+  #bottom-text {
+    top: 77%;
+    left: 15%;
+    width: 70%;
+    height: 20%;
+    font-size: 25px;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #region-text {
+    top: 20%;
+    left: 25%;
     width: 50%;
+    height: 10%;
+    font-size: 25px;
+    padding: 20px;
+  }
+  #region-map {
+    top: 30%;
+    left: 15%;
+    width: 70%;
+    height: 50%;
+  }
+  #bottom-text {
+    top: 79.8%;
+    left: 25%;
+    width: 50%;
+    height: 15%;
+    font-size: 15px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #region-text {
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 10%;
+    font-size: 20px;
+    padding: 10px;
+  }
+  #region-map {
+    top: 35%;
+    left: 20%;
+    width: 60%;
+    height: 48%;
+  }
+  #bottom-text {
+    top: 83%;
+    left: 25%;
+    width: 50%;
+    height: 15%;
+    font-size: 15px;
+    padding: 5px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    width: 100%;
-  }
-  #region {
-    width: 100%;
-  }
   #region-text {
-    width: 100%;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    height: 10%;
+    font-size: 20px;
   }
   #region-map {
-    width: 100%;
+    top: 40%;
+    left: 15%;
+    width: 70%;
+    height: 40%;
   }
   #bottom-text {
-    width: 100%;
+    top: 79.8%;
+    left: 25%;
+    width: 50%;
+    height: 15%;
+    font-size: 15px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #region-text {
+    top: 40%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+    font-size: 15px;
+    padding: 18px;
+  }
+  #region-map {
+    top: 48%;
+    left: 5%;
+    width: 90%;
+    height: 30%;
+  }
+  #bottom-text {
+    top: 78%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+    font-size: 10px;
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  #region-text {
+    top: 40%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+    font-size: 15px;
+    padding: 18px;
+  }
+  #region-map {
+    top: 48%;
+    left: 5%;
+    width: 90%;
+    height: 30%;
+  }
+  #bottom-text {
+    top: 78%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+    font-size: 10px;
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #region-text {
+    top: 44%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+    font-size: 15px;
+    padding: 18px;
+  }
+  #region-map {
+    top: 53%;
+    left: 5%;
+    width: 90%;
+    height: 30%;
+  }
+  #bottom-text {
+    top: 82.8%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #region-text {
+    top: 50%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+    font-size: 15px;
+    padding: 18px;
+  }
+  #region-map {
+    top: 60%;
+    left: 5%;
+    width: 90%;
+    height: 30%;
+  }
+  #bottom-text {
+    top: 90%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+    font-size: 10px;
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #region-text {
+    top: 48%;
+    left: 15%;
+    width: 70%;
+    height: 8%;
+    font-size: 15px;
+    padding: 18px;
+  }
+  #region-map {
+    top: 56%;
+    left: 5%;
+    width: 90%;
+    height: 30%;
+  }
+  #bottom-text {
+    top: 86%;
+    left: 15%;
+    width: 70%;
+    height: 13%;
+    font-size: 10px;
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #region-text {
+    top: 56%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+    font-size: 15px;
+    padding: 18px;
+  }
+  #region-map {
+    top: 65%;
+    left: 5%;
+    width: 90%;
+    height: 22%;
+  }
+  #bottom-text {
+    top: 86%;
+    left: 15%;
+    width: 70%;
+    height: 13%;
+    font-size: 10px;
+    padding: 2px;
   }
 }
