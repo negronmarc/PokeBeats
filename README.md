@@ -27,7 +27,7 @@ This webpage will let users choose a pokemon and display there music alongside t
 
 ## Preview
 
-![Img](./assets/images/preview.PNG)
+![Img](./assets/images/preview.png)
 
 ## Contributors
 
@@ -36,4 +36,3 @@ Quynh Dinh, Anthony Jimenez, Marc Negron, Harrison Oliner
 ## Launch
 
 [PokeBeats](https://negronmarc.github.io/Poke-Beats/index.html)
-
