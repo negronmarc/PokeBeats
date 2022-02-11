@@ -35,4 +35,4 @@ This webpage will let users choose a pokemon and display there music alongside t
 
 ## Launch
 
-[PokeBeats](https://negronmarc.github.io/Poke-Beats/index.html)
+[PokeBeats](https://negronmarc.github.io/PokeBeats/index.html)
